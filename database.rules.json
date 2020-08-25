@@ -1,0 +1,19 @@
+{
+  "rules": {
+    "projects": {
+      "public": {
+        ".read": true,
+        ".write": true
+      },
+      "users": {
+        "$userID": {
+          ".read": "auth.uid === $userID || auth.uid === 'LilIYVlEPxcby4eAQ9lQKjsgb3R2'",
+          ".write": "auth.uid === $userID || $userID === 'LilIYVlEPxcby4eAQ9lQKjsgb3R2'",
+          "$projectID": {
+            ".validate": "newData.child('userID').val() === auth.uid || newData.child('userID').val() === 'LilIYVlEPxcby4eAQ9lQKjsgb3R2'"
+          }
+        }
+      }
+    }
+  }
+}
