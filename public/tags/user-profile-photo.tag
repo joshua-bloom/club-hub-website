@@ -1,30 +1,25 @@
 <user-profile-photo>
-	<a class="jumbotron-links" href="#my-profile">
-		<div class="btn btn-lg btn-default" type="button">
-			<figure>
-				<img id="user-photo" src={ userPhotoURL } alt="user profile photo" width="50px" height="50px">
-				<!--
-                    Display user's first name
-                    <figcaption class="pull-right"><h3>{ userName.substr(0,user.displayName.indexOf(' ')) }</h3></figcaption>
-                -->
-			</figure>
-		</div>
-	</a>
+    
+    <!-- Display user's profile photo -->
+    <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#my-profile">
+        <img id="user-photo" src={ userPhotoURL } alt="user profile photo" width="35px" height="35px">
+        <!-- Display user's name -->
+        <!--{ userName.substr(0,user.displayName.indexOf(' ')) }-->
+    </a>
 
 	<script>
 		var that = this;
 		this.user = firebase.auth().currentUser;
 
-		this.userPhotoURL = "http://placehold.it/100x100.png";		// Default user photo to placeholder
+		this.userPhotoURL = "http://placehold.it/100x100.png";    // Default user photo set to placeholder
 		this.userName = "First Last Name";
 
-		if (this.user.photoURL) {							// If they have a (Google) photo...
-			this.userPhotoURL = this.user.photoURL;				// display their photo instead of the placeholder
-		}
-		if (this.user.displayName) {
-			this.userName = this.user.displayName;
-		}
-
+        if (this.user.photoURL) {						          // Get user profile photo from Google Account (if available)	  
+            this.userPhotoURL = this.user.photoURL;			
+        }
+        if (this.user.displayName) {
+            this.userName = this.user.displayName;                // Get user's name from Google Account and display it
+        }
 	</script>
 
 	<style>
@@ -34,24 +29,17 @@
 		}
 		:scope {
 			display: inline-block;
+            padding: none;
+            margin: none;
 		}
-		figure {
-			text-align: center;
-			display: inline-block;
-		}
-		figcaption {
-			margin-top: 2px;
-			margin-left: 12px;
-		}
+        
+        a {
+            margin-top: -2px;
+        }
+        
         #user-photo {
 			border-radius: 50%;
 			border: 2px solid #404040;
-		}
-        @media (min-width: 768px) {
-			#user-photo {
-				height: 65px;
-				width: 65px;
-			}
 		}
 	</style>
     

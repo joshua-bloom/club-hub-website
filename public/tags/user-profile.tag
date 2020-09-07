@@ -1,33 +1,36 @@
 <user-profile>
-
+    <!-------------------------------------------------------------------------------------------------------------------------->
+    <!------------------------------------------------------- User Profile ----------------------------------------------------->
+    <!-------------------------------------------------------------------------------------------------------------------------->
+    
     <!-- HTML -->
-	<div class="container-fluid">
+	<div class="container-fluid mb-5">
 
-        <!-- The "My Profile" page displays basic information about the user -->
-
-		<!-- Header -->
-		<div class="row">
-			<div class="col-lg-8 col-md-8 col-sm-7 col-xs-7">
-				<h2><i class="fa fa-address-card icon-header" aria-hidden="true"></i>My Profile</h2>
-			</div>
-			<div class="col-lg-3 col-md-3 col-sm-4 col-xs-3">
-				<img id="user-photo" src={ userPhotoURL } height="115px" width="115px">
-			</div>
-			<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1"/>
+        <!-- My Profile Page Heading-->
+        <h2 class="page-section-heading text-center text-uppercase text-secondary mt-5 pt-5 mb-0">My Profile</h2>
+        <!-- Icon Divider-->
+        <div class="divider-custom my-0 pt-0 pb-4">
+            <div class="divider-custom-line"></div>
+            <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+            <div class="divider-custom-line"></div>
         </div>
-
-		<!-- Body -->
-        <div class="container">
-			<div id="user-info-headers" class="row">
-				<h4>Name: <h5><em>{ userName }</em></h5></h4>
+        
+        <!-- My Profile Page Body -->
+        <div class="d-flex justify-content-center mt-2 pt-0 mb-0">
+            <!-- Bootstrap 'Card' Component: https://getbootstrap.com/docs/4.0/components/card/ -->
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src={ userPhotoURL } id="user-photo" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">{ userName }</h5>
+                    <p class="card-text">{ userEmail } &nbsp
+                        <a if={ user } class="btn btn-primary py-1 px-2" href={ 'mailto:' + userEmail + '?subject=Request from Website'} target="_blank"><i class="fa fa-envelope-square" aria-hidden="true"></i></a>
+                    </p>
+                </div>
             </div>
-            <div id="user-info-headers" class="row">
-				<h4>Email: <em><h5> { userEmail } </h5></em></h4>
-			</div>
         </div>
 	</div>
 
-    <!-- JAVASCRIPT -->
+    <!-- JavaScript -->
 	<script>
         console.log("user-profile.tag");
 
@@ -61,20 +64,7 @@
 			display: block;
 			border: 1px solid #DDD;
 			border-radius: 4px;
-			padding: 15px;
 			background-color: white;
-		}
-		.icon-header {
-			padding-right: 25px;
-		}
-        #user-info-headers {
-            margin-left: 15px;
-        }
-		@media (min-width: 768px) {
-			#user-photo {
-				height: 120px;
-				width: 120px;
-			}
 		}
 	</style>
     
