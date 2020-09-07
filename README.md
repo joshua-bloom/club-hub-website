@@ -14,3 +14,13 @@
     To push an update to Firebase, move into the 'public' folder and 'deploy' newest version of app:
         $ cd Desktop/code/web-development/clubhub-website/public
         $ firebase deploy --project bishops-clubhub
+
+
+### Video Tutorials
+    Playlist    https://www.youtube.com/playlist?list=PLKD3lqNfJJmozw06j-INlHokyqKaZvxDG
+    
+    Video #0    Introduction                            https://youtu.be/NOcTq-g5T90
+    Video #1    Create a New Feature                    https://youtu.be/cFDAymbnjBs
+    Video #2    Pulling (Reading) Data from Firebase    https://youtu.be/WLH9QSrY-ec
+    Video #3    
+    
