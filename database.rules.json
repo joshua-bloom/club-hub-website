@@ -1,16 +1,23 @@
 {
   "rules": {
-    "projects": {
+    ".read": "auth != null",
+    "gmailUsers": {
+      "$uid": {
+        ".write": "auth.token.email_verified == true && 
+                   auth.token.email.matches(/.*@bishops.com$/)"
+      }
+    },
+    "clubs": {
       "public": {
         ".read": true,
         ".write": true
       },
       "users": {
         "$userID": {
-          ".read": "auth.uid === $userID || auth.uid === 'LilIYVlEPxcby4eAQ9lQKjsgb3R2'",
-          ".write": "auth.uid === $userID || $userID === 'LilIYVlEPxcby4eAQ9lQKjsgb3R2'",
+          ".read": "auth.uid === $userID || auth.uid === 'nisCMhX16tN7u0Bxobrz1CL2Q4T2'",
+          ".write": "auth.uid === $userID || $userID === 'nisCMhX16tN7u0Bxobrz1CL2Q4T2'",
           "$projectID": {
-            ".validate": "newData.child('userID').val() === auth.uid || newData.child('userID').val() === 'LilIYVlEPxcby4eAQ9lQKjsgb3R2'"
+            ".validate": "newData.child('userID').val() === auth.uid || newData.child('userID').val() === 'nisCMhX16tN7u0Bxobrz1CL2Q4T2'"
           }
         }
       }
