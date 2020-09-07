@@ -1,60 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-
-        <!-- CSS Styling : import Bootstrap and Font Awesome icons -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-        <link rel="stylesheet" href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
+    <head>   
+        <!-- Required Meta Tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        
         <!-- Website Title -->
         <title>ClubHub</title>
+        
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.12.1/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+        
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
     </head>
-
-    <!----------------------------------------------------------------------------------------------->
-    <!---------------------------------------  WEBPAGE CONTENT  ------------------------------------->
-    <!----------------------------------------------------------------------------------------------->
+    
+    <!-------------------------------------------------------------------------------------------------------------------------->
+    <!---------------------------------------------------- Website Content ----------------------------------------------------->
+    <!-------------------------------------------------------------------------------------------------------------------------->
+    
     <body>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-12">
-                    <app></app>		<!-------------------- RIOT STUFF STARTS HERE -------------------->
-                </div>				<!-- "app.tag" is mounted (this is the entry point for the app) -->
-            </div>
-        </div>
+        
+        <!-- "app.tag" is mounted and serves as the entry point for the app -->
+        <app></app>		           
 
-        <!----------------------------------------------------------------------------------------------->
-        <!---------------------------------------  WEBPAGE SCRIPTS  ------------------------------------->
-        <!----------------------------------------------------------------------------------------------->
-
-        <!-- jQuery Libraries -->
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-                integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-        <script src="https://code.jquery.com/jquery-1.11.1.min.js"
-                integrity="sha256-VAvG3sHdS5LqTT+5A/aeq/bZGa/Uj04xKxY8KM/w9EE=" crossorigin="anonymous"></script>
-
-        <!-- Bootstrap Libraries -->
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-                integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-        <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-        <script src="js/popover/popper.min.js" type="text/javascript"></script>
-
-        <!-- Web Browser Detection Library -->
-        <script src="js/detect-browser/is.js" type="text/javascript"></script>
-
-        <!----------------------------------------------------------------------------------------------->
-        <!-----------------------  CONNECT TO FIREBASE AND ACCESS APP + SERVICES  ----------------------->
-        <!----------------------------------------------------------------------------------------------->
-        <!--- The core Firebase JS SDK is always required and must be listed first. Then add SDKs for  -->
-        <!--- the Firebase products that you want to use (in this case, authentication + database)     -->
+        <!-------------------------------------------------------------------------------------------------------------------------->
+        <!-------------------------------------------------------- Scripts --------------------------------------------------------->
+        <!-------------------------------------------------------------------------------------------------------------------------->
+        <!-- Bootstrap core JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" type="text/javascript"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+        
+        <!-- Third party plugin JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+        
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+        
+        <!-------------------------------------------------------------------------------------------------------------------------->
+        <!----------------------------------------------------- Firebase SDK ------------------------------------------------------->
+        <!-------------------------------------------------------------------------------------------------------------------------->
+        
+        <!------------- Firebase core JS Software Development Kit (required, list this first) ----------->
         <script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-app.js"></script>
+        
+        <!------------- Firebase optional JS: include any Firebase products that you want to use -------->
+        <!------------- We're going to use Firebase's Authentication and Realtime Database SDKs  -------->
         <script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-auth.js"></script>
         <script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-database.js"></script>
 
-        <!-- Initialize the SDK after all desired features are loaded -->
+        <!------------- Initialize the SDK after all desired features are loaded ------------------------>
         <script>
             // Your web app's Firebase configuration
             var config = {
@@ -70,62 +71,50 @@
             firebase.initializeApp(config);
         </script>
 
-        <!----------------------------------------------------------------------------------------------->
-        <!-----------------------------------  LOAD RIOT JS TAG FILES  ---------------------------------->
-        <!----------------------------------------------------------------------------------------------->
-
-        <!-- App Entry Point -->
+        <!-------------------------------------------------------------------------------------------------------------------------->
+        <!--------------------------------------------------- Riot JS Framework ---------------------------------------------------->
+        <!-------------------------------------------------------------------------------------------------------------------------->
+        
+        <!----------------------------------- Load Riot JS Tag Files ------------------------------------>
+        <!-- App Entry Point-->
         <script src="tags/app.tag" type="riot/tag"></script>
-
-        <!-- Navbars (top and bottom) -->
-        <script src="tags/navbar-top.tag" type="riot/tag"></script>
+        <!-- Navigation -->
+        <script src="tags/navbar.tag" type="riot/tag"></script>
         <script src="tags/navbar-bottom.tag" type="riot/tag"></script>
-
-        <!-- Home Page (public and members) -->
+        <!-- Home Page with club listings (varies slightly for public, client, and admin users) -->
         <script src="tags/home-page.tag" type="riot/tag"></script>
-        <script src="tags/home-page-members.tag" type="riot/tag"></script>
-        <script src="tags/home-page-public.tag" type="riot/tag"></script>
-
-        <!-- User Profile Page (load and display user data) -->
-        <script src="tags/user-profile.tag" type="riot/tag"></script>
-        <script src="tags/user-profile-photo.tag" type="riot/tag"></script>
-
-        <!-- Club Application Page (form + confirmation pages) -->
+        <script src="tags/club-info.tag" type="riot/tag"></script>
+        <!-- Club Application Page (form + confirmation page) -->
         <script src="tags/application-page.tag" type="riot/tag"></script>
         <script src="tags/application-page-form.tag" type="riot/tag"></script>
         <script src="tags/application-page-results.tag" type="riot/tag"></script>
-
-        <!-- Club Information (load and display club data) -->
-        <script src="tags/club-info.tag" type="riot/tag"></script>
-        <script src="tags/carousel-and-title.tag" type="riot/tag"></script>
-
+        <!-- User Profile Page (load and display user data) -->
+        <script src="tags/user-profile.tag" type="riot/tag"></script>
+        <script src="tags/user-profile-photo.tag" type="riot/tag"></script>
         <!-- 404 Page Not Found -->
         <script src="tags/page-not-found.tag" type="riot/tag"></script>
-        <!----------------------------------------------------------------------------------------------->
+        
+        <!------------------------ Load Riot JS Compiler (convert tags into JS) ------------------------->
+        <script src="https://cdn.jsdelivr.net/riot/3.1/riot+compiler.js"></script>
 
-        <!------------------------  LOAD RIOT JS COMPILER (convert tags into JS) ------------------------>
-        <script src="https://cdn.jsdelivr.net/riot/3.1/riot+compiler.js"></script>  <!-- version 3.1.x -->
-
-        <!------------------------------------  LOAD RIOT JS ROUTER  ------------------------------------>
+        <!------------------------ Load Riot JS Router (for page routing) ------------------------------->
         <script src="https://cdn.jsdelivr.net/riot-route/3.1.1/route.min.js"></script>
 
-        <!-----  MOUNT (INSERT) ALL OF THE NEW JAVASCRIPT CODE (CONVERTED TAG FILES) ON THE WEBPAGE ----->
+        <!------------------------ Mount All Riot JS Tag Files ------------------------------------------>
         <script>
-            // console.log("index.html");
+            console.log("index.html");
             riot.mount('*');
         </script>
-
     </body>
 
-
-    <!--------------------------------------------------------------------------------------------------->
-    <!------------------------------------  CSS STYLING FOR THE PAGE  ----------------------------------->
-    <!--------------------------------------------------------------------------------------------------->
+    <!-------------------------------------------------------------------------------------------------------------------------->
+    <!------------------------------------------------------ CSS Syling -------------------------------------------------------->
+    <!-------------------------------------------------------------------------------------------------------------------------->
 	<style>
 		body {
-               height: 100%;
-               background-image: url("assets/img/background-image-ocean.png");
-          }
+            height: 100%;
+            /* background-image: url("assets/img/background-image-ocean.png"); */
+        }
 	</style>
 
 </html>
