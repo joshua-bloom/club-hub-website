@@ -60,5 +60,5 @@ Video #7    Complete Overview of ClubHub Project Code   [YouTube video](https://
     Markdown is a lightweight markup language with plain-text-formatting syntax, created in 2004 by John Gruber
     with Aaron Swartz. Markdown is often used for formatting readme files, for writing messages in online 
     discussion forums, and to create rich text using a plain text editor.
-
-#### In case you're interested in improving this README or making a new one, here's a [Markdown Language Cheatsheet](https://en.wikipedia.org/wiki/Markdown-Cheatsheet/).
+    
+    In case you're interested in improving this README or making a new one, here's a [Markdown Language Cheatsheet](https://en.wikipedia.org/wiki/Markdown-Cheatsheet/).
