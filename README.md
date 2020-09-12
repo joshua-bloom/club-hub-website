@@ -36,7 +36,13 @@ Video #7    Complete Overview of ClubHub Project Code   [YouTube video](https://
 #### What is this, "README.md" file I'm looking at? What language/format is .md an extension for? 
 #### Great questions! I'll pass these off to Wikipedia: 
 #### [Wikipedia: README](https://en.wikipedia.org/wiki/README) 
-    A README file contains information about other files in a directory or archive of computer software. A form of documentation, it is usually a simple plain text file called README.txt or README.md. The file's name is generally written in uppercase letters. On Unix-like systems in particular this makes it easily noticed – both because lowercase filenames are more usual, and because traditionally the ls command sorts and displays files in ASCII-code order, so that uppercase filenames appear first. The contents typically include one or more of the following:
+    A README file contains information about other files in a directory or archive of computer software. 
+    A form of documentation, it is usually a simple plain text file called README.txt or README.md. 
+    The file's name is generally written in uppercase letters. On Unix-like systems in particular this
+    makes it easily noticed – both because lowercase filenames are more usual, and because traditionally 
+    the ls command sorts and displays files in ASCII-code order, so that uppercase filenames appear first. 
+    
+    The contents typically include one or more of the following:
         - Configuration instructions
         - Installation instructions
         - Operating instructions
@@ -50,6 +56,9 @@ Video #7    Complete Overview of ClubHub Project Code   [YouTube video](https://
         - A news section (usually for users)
         
 #### [Wikipedia: Markdown](https://en.wikipedia.org/wiki/Markdown)
-    README files are typically written in the Markdown language, which is why this file has a .md file extension. Markdown is a lightweight markup language with plain-text-formatting syntax, created in 2004 by John Gruber with Aaron Swartz. Markdown is often used for formatting readme files, for writing messages in online discussion forums, and to create rich text using a plain text editor.
+    README files are typically written in the Markdown language, which is why this file has a .md file extension.
+    Markdown is a lightweight markup language with plain-text-formatting syntax, created in 2004 by John Gruber
+    with Aaron Swartz. Markdown is often used for formatting readme files, for writing messages in online 
+    discussion forums, and to create rich text using a plain text editor.
 
 #### In case you're interested in improving this README or making a new one, here's a [Markdown Language Cheatsheet](https://en.wikipedia.org/wiki/Markdown-Cheatsheet/).
