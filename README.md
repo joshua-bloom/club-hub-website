@@ -11,7 +11,7 @@ Node.JS and NPM -> https://www.npmjs.com/get-npm
 
 
 ### Updating and Deploying Application  
-To push an update to Firebase from the command line, move into the 'public/' directory and deploy newest version of app:
+#### To push an update to Firebase from the command line, move into the 'public/' directory and deploy newest version of app:
     $ cd ~/Desktop/clubhub/clubhub-web-app/public
     $ firebase deploy --project bishops-clubhub
 
@@ -25,16 +25,15 @@ Playlist    https://www.youtube.com/playlist?list=PLKD3lqNfJJmozw06j-INlHokyqKaZ
 ##### - [Video #3](https://youtu.be/s19OdQeBixc)    Pushing (Writing) Data to Firebase   
 ##### - [Video #4](https://youtu.be/duds8VW8-ds)    Integrate Your Code with Main Project
 ##### - [Video #4.5](https://youtu.be/Opv8W48a8i8)  Web Development IDE (Brackets Setup)
-
-##### - Video #5    Intro to Web Development (HTML, CSS, JS)   
-##### - Video #6    Web Dev Frameworks + Component-based UIs   
-##### - Video #7    Complete Overview of ClubHub Project Code  
+##### - [Video #5](https://youtu.be/ykCzrNjQJHo)    Firebase Authentication (using Google Sign-in with JavaScript)
+##### - Video #6    Intro to Web Development (HTML, CSS, JS)   
+##### - Video #7    Web Dev Frameworks + Component-based UIs   
+##### - Video #8    Complete Overview of ClubHub Project Code  
 
 
 ### Extra Information
 
-#### What is this, "README.md" file I'm looking at? What language/format is .md an extension for? 
-#### Great questions! I'll pass these off to Wikipedia: 
+#### What is this, "README.md" file I'm looking at? What language/format is .md an extension for? Great questions! I'll pass these off to Wikipedia: 
 #### [Wikipedia: README](https://en.wikipedia.org/wiki/README) 
     A README file contains information about other files in a directory or archive of computer software. 
     A form of documentation, it is usually a simple plain text file called README.txt or README.md. 
