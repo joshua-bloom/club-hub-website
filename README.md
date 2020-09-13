@@ -26,9 +26,9 @@ Playlist    https://www.youtube.com/playlist?list=PLKD3lqNfJJmozw06j-INlHokyqKaZ
 ##### - [Video #4](https://youtu.be/duds8VW8-ds)    Integrate Your Code with Main Project
 ##### - [Video #4.5](https://youtu.be/Opv8W48a8i8)  Web Development IDE (Brackets Setup)
 ##### - [Video #5](https://youtu.be/ykCzrNjQJHo)    Firebase Authentication (using Google Sign-in with JavaScript)
-##### - Video #6    Intro to Web Development (HTML, CSS, JS)   
-##### - Video #7    Web Dev Frameworks + Component-based UIs   
-##### - Video #8    Complete Overview of ClubHub Project Code  
+##### - [Video #6](https://youtu.be/4fvVgiD1NzE)    Intro to Web Development (HTML, CSS, JS)   
+##### - [Video #7](https://youtu.be/Rv1Om52ls8A)    Web Dev Frameworks + Component-based UIs   
+##### - [Video #8](https://youtu.be/Rjv5bKW11gM)    Complete Overview of ClubHub Project Code  
 
 
 ### Extra Information
