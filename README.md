@@ -19,16 +19,16 @@ To push an update to Firebase from the command line, move into the 'public/' dir
 ### Video Tutorials
 Playlist    https://www.youtube.com/playlist?list=PLKD3lqNfJJmozw06j-INlHokyqKaZvxDG
     
-##### - Video #0    Introduction                                [YouTube video](https://youtu.be/NOcTq-g5T90)
-##### - Video #1    Create a New Feature                        [YouTube video](https://youtu.be/cFDAymbnjBs)
-##### - Video #2    Pulling (Reading) Data from Firebase        [YouTube video](https://youtu.be/WLH9QSrY-ec)
-##### - Video #3    Pushing (Writing) Data to Firebase          [YouTube video](https://youtu.be/s19OdQeBixc)
-##### - Video #4    Integrate Your Code with Main Project       [YouTube video](https://youtu.be/duds8VW8-ds)
-##### - Video #4.5  Web Development IDE (Brackets Setup)        [YouTube video](https://youtu.be/Opv8W48a8i8)
+##### - [Video #0](https://youtu.be/NOcTq-g5T90)    Introduction                         
+##### - [Video #1](https://youtu.be/cFDAymbnjBs)    Create a New Feature                 
+##### - [Video #2](https://youtu.be/WLH9QSrY-ec)    Pulling (Reading) Data from Firebase 
+##### - [Video #3](https://youtu.be/s19OdQeBixc)    Pushing (Writing) Data to Firebase   
+##### - [Video #4](https://youtu.be/duds8VW8-ds)    Integrate Your Code with Main Project
+##### - [Video #4.5](https://youtu.be/Opv8W48a8i8)  Web Development IDE (Brackets Setup)
 
-##### - Video #5    Intro to Web Development (HTML, CSS, JS)    [YouTube video](https://youtu.be/_________)
-##### - Video #6    Web Dev Frameworks + Component-based UIs    [YouTube video](https://youtu.be/_________)
-##### - Video #7    Complete Overview of ClubHub Project Code   [YouTube video](https://youtu.be/_________)
+##### - Video #5    Intro to Web Development (HTML, CSS, JS)   
+##### - Video #6    Web Dev Frameworks + Component-based UIs   
+##### - Video #7    Complete Overview of ClubHub Project Code  
 
 
 ### Extra Information
